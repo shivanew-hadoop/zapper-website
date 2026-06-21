@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.45);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.glass {
+  background: rgba(255,255,255,0.075);
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 24px 90px rgba(0,0,0,0.35);
+  backdrop-filter: blur(18px);
+}
