@@ -1,46 +1,30 @@
 # Zapper Website
 
-Ready-to-deploy Next.js website for zapperapp.in.
+Production-ready Next.js website for Zapper.
 
-## Pages
-
-- Home
-- Products
-- Downloads
-- Contact
-- Login placeholder
-
-## Run locally
+## Local run
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000
+## Build
 
-## Deploy to Vercel
+```bash
+npm run build
+```
 
-1. Push this folder to GitHub.
-2. Open Vercel.
-3. Import the GitHub repo.
-4. Deploy.
-5. Add domain: zapperapp.in.
+## GitHub Releases Download Setup
 
-## Download EXE link
+Create releases in this repository:
 
-The Downloads page points to:
+`https://github.com/shivanew-hadoop/zapper-website/releases`
 
-https://github.com/shivanew-hadoop/zupzup/releases/latest/download/ZapperSetup.exe
+Example:
 
-Make sure the release asset name is exactly `ZapperSetup.exe`.
+- Tag: `v1.0.8`
+- Title: `Zapper v1.0.8`
+- Asset: `Zapper-v1.0.8.exe`
 
-## Contact details
-
-Current email: zapperapp.supported@gmail.com
-
-Phone is placeholder: +91 XXXXX XXXXX
-
-Update phone in:
-
-`app/contact/page.tsx`
+The Downloads page reads GitHub releases automatically.
