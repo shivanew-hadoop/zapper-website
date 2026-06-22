@@ -15,7 +15,7 @@ const faqs = [
   ["Does it work with Google Meet?", "Yes. Zapper is designed around a Google Meet join-and-transcribe workflow."],
   ["Where do I download the installer?", "Use the Downloads page. The installer is published through GitHub Releases."],
   ["Is payment integrated on the website?", "Not yet. The current flow keeps download public and payment/license handling offline."],
-  ["How do I get support?", "Use zapperapp.supported@gmail.com or WhatsApp +91 9346073219."]
+  ["How do I get support?", "Use zapperapp.support@gmail.com or WhatsApp +91 9346073219."]
 ];
 
 export default function HomePage() {

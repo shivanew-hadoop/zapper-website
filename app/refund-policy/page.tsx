@@ -13,7 +13,7 @@ export default function RefundPolicyPage() {
           <h2>Processing</h2>
           <p>Approved refunds, if applicable, will be processed through the original offline payment method or another mutually agreed method.</p>
           <h2>Contact</h2>
-          <p>Email <a className="contact-link" href="mailto:zapperapp.supported@gmail.com">zapperapp.supported@gmail.com</a> or WhatsApp <a className="contact-link" href="https://wa.me/919346073219">+91 9346073219</a>.</p>
+          <p>Email <a className="contact-link" href="mailto:zapperapp.support@gmail.com">zapperapp.support@gmail.com</a> or WhatsApp <a className="contact-link" href="https://wa.me/919346073219">+91 9346073219</a>.</p>
         </div>
       </section>
     </main>

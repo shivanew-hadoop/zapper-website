@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           <h2>Support Communication</h2>
           <p>If you contact us by email, phone or WhatsApp, we use that information only to respond to your support request or licensing inquiry.</p>
           <h2>Contact</h2>
-          <p>For privacy questions, contact <a className="contact-link" href="mailto:zapperapp.supported@gmail.com">zapperapp.supported@gmail.com</a>.</p>
+          <p>For privacy questions, contact <a className="contact-link" href="mailto:zapperapp.support@gmail.com">zapperapp.support@gmail.com</a>.</p>
         </div>
       </section>
     </main>

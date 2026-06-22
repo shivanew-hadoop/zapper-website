@@ -10,7 +10,7 @@ export default function Footer() {
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
           <a href="/refund-policy">Refund Policy</a>
-          <a href="mailto:zapperapp.supported@gmail.com">Support</a>
+          <a href="mailto:zapperapp.support@gmail.com">Support</a>
         </div>
         <div>© 2026 Zapper. All rights reserved.</div>
       </div>

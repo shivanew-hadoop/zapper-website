@@ -15,7 +15,7 @@ export default function TermsPage() {
           <h2>Updates</h2>
           <p>New versions are published through GitHub Releases and may include bug fixes, improvements and changes to functionality.</p>
           <h2>Contact</h2>
-          <p>For terms-related questions, contact <a className="contact-link" href="mailto:zapperapp.supported@gmail.com">zapperapp.supported@gmail.com</a>.</p>
+          <p>For terms-related questions, contact <a className="contact-link" href="mailto:zapperapp.support@gmail.com">zapperapp.support@gmail.com</a>.</p>
         </div>
       </section>
     </main>

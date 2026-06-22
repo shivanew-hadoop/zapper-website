@@ -57,8 +57,8 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold">Support</p>
-          <a href="mailto:zapperapp.supported@gmail.com" className="mt-3 flex items-center gap-2 text-sm text-slate-400 hover:text-white">
-            <Mail size={16} /> zapperapp.supported@gmail.com
+          <a href="mailto:zapperapp.support@gmail.com" className="mt-3 flex items-center gap-2 text-sm text-slate-400 hover:text-white">
+            <Mail size={16} /> zapperapp.support@gmail.com
           </a>
           <Link href="/downloads" className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-slate-200 hover:bg-white/10">
             <Download size={16} /> Download Latest

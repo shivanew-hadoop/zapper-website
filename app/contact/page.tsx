@@ -13,7 +13,7 @@ export default function ContactPage() {
           <div className="card">
             <div className="icon">📧</div>
             <h3>Email Support</h3>
-            <p><a className="contact-link" href="mailto:zapperapp.supported@gmail.com">zapperapp.supported@gmail.com</a></p>
+            <p><a className="contact-link" href="mailto:zapperapp.support@gmail.com">zapperapp.support@gmail.com</a></p>
           </div>
           <div className="card">
             <div className="icon">📱</div>
