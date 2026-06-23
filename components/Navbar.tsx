@@ -47,7 +47,7 @@ export default function Navbar() {
           {links.map(([label, href]) => (
             <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
           ))}
-          <a className="btn btn-primary" href="/downloads">Download</a>
+          <a className="btn btn-primary" href="https://github.com/shivanew-hadoop/zapper-website/releases/latest/download/Zapper-v1.0.8.exe" download>Download</a>
         </nav>
       </div>
     </header>

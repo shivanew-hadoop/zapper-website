@@ -28,7 +28,7 @@ export default function HomePage() {
             <h1>Real-time <span className="gradient">voice-to-text overlay</span> for live meetings.</h1>
             <p className="lead">Zapper helps professionals view live captions while discussions are happening. Join, transcribe and read speech clearly in a lightweight overlay window.</p>
             <div className="actions">
-              <a className="btn btn-primary" href="/downloads">Download Zapper</a>
+              <a className="btn btn-primary" href="https://github.com/shivanew-hadoop/zapper-website/releases/latest/download/Zapper-v1.0.8.exe" download>Download Zapper</a>
               <a className="btn btn-ghost" href="/products">Explore Product</a>
             </div>
             <div className="trust">
@@ -105,5 +105,22 @@ export default function HomePage() {
 }
 
 
-{/* USER/HOST SCREENSHOT SECTION */}
-<section className="mx-auto max-w-7xl px-6 py-12"><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl"><h3 className="text-center text-cyan-300 font-semibold py-3">1. User Screen (Overlay with Captions)</h3><img src="/images/user-screen.png" className="w-full" /></div><div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl"><h3 className="text-center text-violet-300 font-semibold py-3">2. Host Screen (Shared with Others)</h3><img src="/images/host-screen.png" className="w-full" /></div></div></section>
+{/* Screenshots Section */}
+<section className="mx-auto max-w-7xl px-6 py-14">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="rounded-[28px] overflow-hidden border border-white/10 shadow-2xl bg-[#0b1220]">
+      <div className="py-4 text-center">
+        <h3 className="text-cyan-300 font-bold text-xl">1. User Screen (Overlay with Captions)</h3>
+        <p className="text-slate-400">See complete overlay captions in real-time</p>
+      </div>
+      <img src="/images/user-screen.png" alt="User Screen" className="w-full" />
+    </div>
+    <div className="rounded-[28px] overflow-hidden border border-white/10 shadow-2xl bg-[#0b1220]">
+      <div className="py-4 text-center">
+        <h3 className="text-violet-300 font-bold text-xl">2. Host Screen (Shared with Others)</h3>
+        <p className="text-slate-400">Others see only the shared screen</p>
+      </div>
+      <img src="/images/host-screen.png" alt="Host Screen" className="w-full" />
+    </div>
+  </div>
+</section>
