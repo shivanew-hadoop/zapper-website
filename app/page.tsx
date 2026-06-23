@@ -103,3 +103,7 @@ export default function HomePage() {
     </main>
   );
 }
+
+
+{/* USER/HOST SCREENSHOT SECTION */}
+<section className="mx-auto max-w-7xl px-6 py-12"><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl"><h3 className="text-center text-cyan-300 font-semibold py-3">1. User Screen (Overlay with Captions)</h3><img src="/images/user-screen.png" className="w-full" /></div><div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl"><h3 className="text-center text-violet-300 font-semibold py-3">2. Host Screen (Shared with Others)</h3><img src="/images/host-screen.png" className="w-full" /></div></div></section>
