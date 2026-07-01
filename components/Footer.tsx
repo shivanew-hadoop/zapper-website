@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div>
-          <strong style={{ color: "white" }}>Zapper</strong>
+          <strong style={{ color: "white" }}>ZapperApp</strong>
           <div>Real-time voice-to-text overlay for meetings.</div>
         </div>
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>

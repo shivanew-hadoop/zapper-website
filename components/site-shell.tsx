@@ -18,7 +18,7 @@ export function Navbar() {
             Z
           </div>
           <div>
-            <p className="text-lg font-bold tracking-tight">Zapper</p>
+            <p className="text-lg font-bold tracking-tight">ZapperApp</p>
             <p className="text-xs text-slate-400">Voice to Text Overlay</p>
           </div>
         </Link>
@@ -42,7 +42,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-slate-950/80">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 md:grid-cols-3">
         <div>
-          <p className="text-xl font-bold">Zapper</p>
+          <p className="text-xl font-bold">ZapperApp</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-slate-400">
             Real-time voice to text overlay for meetings, calls and live conversations.
           </p>
