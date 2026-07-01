@@ -23,8 +23,8 @@ Create releases in this repository:
 
 Example:
 
-- Tag: `v1.0.8`
-- Title: `Zapper v1.0.8`
-- Asset: `Zapper-v1.0.8.exe`
+- Tag: publish the latest version tag, for example `v1.1.2`
+- Title: use the matching release title, for example `Zapper v1.1.2`
+- Asset: upload the matching Windows installer, for example `Zapper-v1.1.2.exe`
 
-The Downloads page reads GitHub releases automatically.
+The Downloads page reads GitHub releases dynamically and does not hardcode an installer version.

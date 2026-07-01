@@ -1,3 +1,10 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+const GITHUB_OWNER = "shivanew-hadoop";
+const GITHUB_REPO = "zapper-website";
+const RELEASES_URL = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/releases`;
+
 type Asset = {
   name: string;
   browser_download_url: string;
@@ -12,20 +19,35 @@ type Release = {
   body: string | null;
   published_at: string;
   html_url: string;
+  draft?: boolean;
+  prerelease?: boolean;
   assets: Asset[];
 };
 
 async function getReleases(): Promise<Release[]> {
   try {
-    const response = await fetch("https://api.github.com/repos/shivanew-hadoop/zapper-website/releases", {
+    const response = await fetch(RELEASES_URL, {
       headers: { Accept: "application/vnd.github+json" },
-      next: { revalidate: 300 }
+      cache: "no-store"
     });
+
     if (!response.ok) return [];
-    return response.json();
+
+    const releases = (await response.json()) as Release[];
+
+    return releases
+      .filter((release) => !release.draft)
+      .sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
   } catch {
     return [];
   }
+}
+
+function getDownloadAsset(release?: Release) {
+  return (
+    release?.assets?.find((asset) => asset.name.toLowerCase().endsWith(".exe")) ||
+    release?.assets?.[0]
+  );
 }
 
 function formatSize(bytes: number) {
@@ -36,7 +58,7 @@ function formatSize(bytes: number) {
 export default async function DownloadsPage() {
   const releases = await getReleases();
   const latest = releases[0];
-  const latestExe = latest?.assets?.find(asset => asset.name.toLowerCase().endsWith(".exe")) || latest?.assets?.[0];
+  const latestExe = getDownloadAsset(latest);
 
   return (
     <main>
@@ -44,7 +66,7 @@ export default async function DownloadsPage() {
         <div className="container">
           <div className="badge"><span className="pulse" /> GitHub Releases</div>
           <h1>Download Zapper.</h1>
-          <p className="lead">Install the latest Windows version. Releases are maintained in the official Zapper website GitHub repository.</p>
+          <p className="lead">Install the latest Windows version. This page always reads the current release from GitHub instead of using a hardcoded installer link.</p>
         </div>
       </section>
 
@@ -52,7 +74,7 @@ export default async function DownloadsPage() {
         <div className="container">
           {!latest && (
             <div className="notice">
-              No GitHub release found yet. Publish your first release with a Windows EXE asset in GitHub, then this page will show it automatically.
+              No GitHub release found yet. Publish your latest release with a Windows EXE asset in GitHub, then this page will show it automatically.
             </div>
           )}
 
@@ -85,8 +107,8 @@ export default async function DownloadsPage() {
           </div>
 
           <div className="grid">
-            {releases.slice(1).map(release => {
-              const exe = release.assets?.find(asset => asset.name.toLowerCase().endsWith(".exe")) || release.assets?.[0];
+            {releases.slice(1).map((release) => {
+              const exe = getDownloadAsset(release);
               return (
                 <div className="card download-card" key={release.id}>
                   <div>
